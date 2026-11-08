@@ -1,5 +1,6 @@
 # Release workflow from Obsidian's "Release your plugin with GitHub Actions" page.
 # There is no build step yet: main.js is committed as-is (see IMPORT.md).
+# Publishes the release directly (no draft), so a tag push is the only manual step.
 name: Release Obsidian plugin
 
 on:
@@ -39,5 +40,5 @@ jobs:
           tag="${GITHUB_REF#refs/tags/}"
           gh release create "$tag" \
             --title="$tag" \
-            --draft \
+            --generate-notes \
             main.js manifest.json styles.css

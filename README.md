@@ -44,7 +44,7 @@ Where it came from is in [IMPORT.md](IMPORT.md).
 
 1. Bump `version` in `manifest.json` and add it to `versions.json` with its minimum Obsidian version.
 2. Tag the commit with the exact version, no `v` (for example `0.1.1`) and push the tag.
-3. The release workflow checks the tag, attests the three files and drafts the release.
+3. The release workflow checks the tag, attests the three files and publishes the release.
 
 ## Licence
 
