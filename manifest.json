@@ -1,0 +1,9 @@
+{
+  "id": "graph-3d",
+  "name": "Graph 3D",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Dependency-free 3D graph view: WebGL glow, folder colours from graph.json, focus mode.",
+  "author": "Research vault",
+  "isDesktopOnly": false
+}

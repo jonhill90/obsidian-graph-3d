@@ -1,0 +1,45 @@
+/* Graph 3D — AMOLED black, rice palette, JetBrainsMono via the interface font. */
+.graph3d-root {
+  --g3d-accent: var(--rice-accent, var(--interactive-accent, #5cf575));
+  --g3d-cyan: var(--rice-cyan, #00e5ff);
+  position: relative;
+  padding: 0 !important;
+  overflow: hidden;
+  background: #000;
+  font-family: var(--font-interface);
+}
+.graph3d-gl, .graph3d-labels { position: absolute; inset: 0; display: block; }
+.graph3d-gl { cursor: grab; }
+.graph3d-labels { pointer-events: none; }
+.graph3d-hud {
+  position: absolute; top: 10px; left: 10px; z-index: 2;
+  display: flex; flex-direction: column; gap: 6px;
+  font-size: 11px; color: var(--text-muted);
+}
+.graph3d-stats { color: var(--g3d-accent); letter-spacing: 0.02em; text-shadow: 0 0 6px rgba(92, 245, 117, 0.35); }
+.graph3d-row { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; }
+.graph3d-root .graph3d-btn {
+  font: inherit; font-size: 11px; height: 22px; padding: 0 8px;
+  background: rgba(0, 0, 0, 0.6); color: var(--text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 4px; box-shadow: none; cursor: pointer;
+}
+.graph3d-root .graph3d-btn:hover { color: var(--text-normal); border-color: var(--g3d-cyan); }
+.graph3d-root .graph3d-btn.is-active { color: var(--g3d-accent); border-color: var(--g3d-accent); }
+.graph3d-root .graph3d-search {
+  font: inherit; font-size: 11px; height: 22px; width: 160px; padding: 0 8px;
+  background: rgba(0, 0, 0, 0.6); color: var(--text-normal);
+  border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 4px;
+}
+.graph3d-root .graph3d-search:focus { border-color: var(--g3d-accent); box-shadow: none; }
+.graph3d-card {
+  position: absolute; right: 12px; bottom: 12px; z-index: 2; max-width: 320px;
+  padding: 10px 12px; border-radius: 6px;
+  background: rgba(0, 0, 0, 0.72); border: 1px solid rgba(92, 245, 117, 0.35);
+  box-shadow: 0 0 18px rgba(92, 245, 117, 0.12);
+  font-size: 12px; color: var(--text-normal);
+}
+.graph3d-card.is-hidden { display: none; }
+.graph3d-card-title { color: var(--g3d-accent); font-weight: 600; margin-bottom: 2px; }
+.graph3d-card-path, .graph3d-card-meta { color: var(--text-muted); font-size: 11px; margin-bottom: 6px; }
+.graph3d-error { padding: 20px; color: var(--text-error); }
+.graph3d-open-btn { font-family: var(--font-interface); }
