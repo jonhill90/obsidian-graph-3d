@@ -1,8 +1,7 @@
 # Where this code came from
 
-Graph 3D 0.1.0 was written in the Research notebook and merged there as
-[Research PR #66](https://github.com/jonhill90/Research/pull/66)
-(merge commit `80ab51033`; original branch commit `4abec8fb`). Its history before this
+Graph 3D 0.1.0 was written in the Research notebook, which is private, and merged
+there as Research PR #66 (merge commit `80ab51033`; original branch commit `4abec8fb`). Its history before this
 repository lives there.
 
 The first commit of this repository copies the three plugin files from Research `main`
